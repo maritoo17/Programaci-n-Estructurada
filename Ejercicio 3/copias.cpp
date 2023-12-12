@@ -9,3 +9,9 @@ struct Estudiante {
     float promedio;
     struct Estudiante *siguiente;
 };
+
+void copiarEstudiante(struct Estudiante *destino, const struct Estudiante *origen) {
+    strcpy(destino->nombre, origen->nombre);
+    destino->edad = origen->edad;
+    destino->promedio = origen->promedio;
+}
