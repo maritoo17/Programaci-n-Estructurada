@@ -9,3 +9,4 @@ struct Estudiante {
     float promedio;
 };
 
+typedef struct Estudiante EstudianteAlias;
