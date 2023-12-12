@@ -9,16 +9,18 @@ struct Estudiante {
 };
 
 int main(){
-    struct Estudiante *estudiante1 = (struct Estudiante *) malloc(sizeof(struct Estudiante));
+    struct Estudiante *puntero_estudiante;
 
-    if (estudiante1 == NULL){
+    puntero_estudiante = (struct Estudiante *) malloc(sizeof(struct Estudiante));
+
+    if (puntero_estudiante == NULL){
         printf("No se pudo asignar memoria");
         exit(1);
     }
 
-    strcpy(estudiante1->nombre, "Juan");
-    estudiante1->edad = 20;
-    estudiante1->promedio = 9.5;
+    strcpy(puntero_estudiante->nombre, "Juan");
+    puntero_estudiante->edad = 20;
+    puntero_estudiante->promedio = 9.5;
 
     printf
 
